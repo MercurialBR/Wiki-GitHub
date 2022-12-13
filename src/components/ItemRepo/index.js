@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ItemContainer } from './styles';
+import { ItemContainer, ButtonRemove, ButtonRepo} from './styles';
 
 function ItemRepo({repo, handleRemoveRepo }) {
 
@@ -12,8 +12,8 @@ function ItemRepo({repo, handleRemoveRepo }) {
     <ItemContainer onClick={handleRemove}>
      <h3> {repo.name} </h3> 
      <p> {repo.full_name} </p>
-     <a href={repo.html_url} rel="noreferrer" target='_blank'> Ver repositorio </a><br />
-     <a href='#' rel="noreferrer" className='remover'> Remover </a>
+     <ButtonRepo> <a href={repo.html_url} rel="noreferrer" target='_blank'> Ver repositório </a><br /> </ButtonRepo>
+     <ButtonRemove> <a href='#' rel="noreferrer" className='remover'> Remover </a> </ButtonRemove>
      <hr />
     </ItemContainer>
   )

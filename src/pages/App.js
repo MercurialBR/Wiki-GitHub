@@ -27,7 +27,7 @@ function App() {
       }
 
     }
-    alert('Repositorio nao encontrado!')
+    alert('Repositório não encontrado!')
   }
 
   const handleRemoveRepo = (id) => {
